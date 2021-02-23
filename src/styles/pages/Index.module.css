@@ -1,0 +1,30 @@
+.container{
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inputEvolution{
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 3rem;
+    border-radius: 15px;
+}
+
+.container section{
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    align-content: center;
+}
+
+.leftContainer{
+    width: 50%;
+
+}
