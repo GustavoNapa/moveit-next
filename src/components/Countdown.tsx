@@ -11,13 +11,17 @@ export function Countdown() {
     const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
     const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('');
 
+    const [textButton, setTextButton] = useState("Iniciar um ciclo")
+
     function startCountDown() {
         // Ideia que eu criei no meio do caminho para dar pause no contador
-        // if (active) {
-        //     setActive(false)
-        //     return;
-        // }
+        if (active) {
+            setActive(false);
+            setTextButton("Iniciar um ciclo");
+            return;
+        }
         setActive(true);
+        setTextButton("Pausar ciclo");
     }
 
     useEffect(() => {
@@ -44,7 +48,7 @@ export function Countdown() {
                 </div>
             </div>
             <button className={styles.countdownButton} onClick={startCountDown}>
-                Iniciar um ciclo
+                {textButton}
             </button>
         </div>
     );
