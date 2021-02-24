@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { ChangeEvent, useState } from "react";
+import React from "react";
 import ChallengeBox from "../components/ChallengeBox";
 import { CompletedChallanges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
