@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { ChangeEvent, useState } from "react";
+import ChallengeBox from "../components/ChallengeBox";
 import { CompletedChallanges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
 
@@ -29,7 +30,7 @@ export default function Home() {
           <Countdown />
         </div>
         <div>
-
+          <ChallengeBox />
         </div>
       </section>
       <input className={styles.inputEvolution} type="number" value={evolution} min="0" max="100" onChange={handleInputEvolution} />
