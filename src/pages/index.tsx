@@ -1,3 +1,6 @@
+// LINK PROPOSTA DE 2.0 no Figma
+// https://www.figma.com/file/HOgR7FkXlOkTPAfHd1MOC9/Move.it-2.0-(Copy)?node-id=160%3A2761
+
 import Head from "next/head";
 import React from "react";
 
